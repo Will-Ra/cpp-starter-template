@@ -2,19 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch my_project_cli",
+            "name": "Debug Active Target (自动识别)",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/build/debug/apps/my_project_cli",
+            // 核心魔法：读取当前 CMake 选中的启动目标路径
+            "program": "${command:cmake.launchTargetPath}",
             "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "name": "Launch my_project_tests",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/debug/tests/my_project_tests",
-            "args": [],
+            // 核心魔法：读取当前目标所在的目录，或者直接用 workspaceFolder
             "cwd": "${workspaceFolder}"
         }
     ]

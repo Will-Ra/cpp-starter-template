@@ -13,5 +13,10 @@
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "clangd.arguments": [
         "-compile-commands-dir=${workspaceFolder}/build/debug"
-    ]
+    ],
+    "cmake.debugConfig": {
+        "type": "lldb",
+        "request": "launch",
+        "name": "CMake Debug"
+    }
 }
