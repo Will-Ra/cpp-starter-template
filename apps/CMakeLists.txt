@@ -1,0 +1,2 @@
+add_executable(my_project_cli my_project_cli.cpp)
+target_link_libraries(my_project_cli PRIVATE my_project_lib)

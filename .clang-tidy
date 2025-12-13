@@ -1,0 +1,8 @@
+---
+Checks:          'clang-diagnostic-*,clang-modernize-*,clang-analyzer-*,cppcoreguidelines-*,bugprone-*,performance-*,readability-*,misc-*'
+WarningsAsErrors: ''
+HeaderFilterRegex: 'my_project/.*'
+AnalyzeTemporaryDtors: true
+FormatStyle:     File
+InheritParentConfig: false
+...

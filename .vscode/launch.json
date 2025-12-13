@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch my_project_cli",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/apps/my_project_cli",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch my_project_tests",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/tests/my_project_tests",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
