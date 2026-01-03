@@ -14,5 +14,7 @@ target_link_libraries(my_project_tests
   PRIVATE my_project_lib Catch2::Catch2WithMain
 )
 
+set_project_warnings(my_project_tests ${MY_PROJECT_ENABLE_WERROR})
+
 include(CTest)
 add_test(NAME my_project_tests COMMAND my_project_tests)

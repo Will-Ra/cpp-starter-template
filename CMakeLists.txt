@@ -16,6 +16,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 option(MY_PROJECT_BUILD_TESTS "Build tests" ON)
 option(MY_PROJECT_ENABLE_WERROR "Treat warnings as errors" ON)
 option(MY_PROJECT_ENABLE_SANITIZERS "Enable sanitizers" OFF)
+option(MY_PROJECT_ENABLE_CLANG_TIDY "Enable clang-tidy" ON)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(ProjectOptions)
